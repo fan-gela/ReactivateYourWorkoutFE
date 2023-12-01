@@ -1,38 +1,151 @@
-.App {
+.center-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 2.5em;
+  font-family: 'Comforter', cursive;
+  color: purple;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.login-button {
   align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 12px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 75px;
+  padding: 2px;
+  touch-action: manipulation;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.login-button:active,
+.login-button:hover {
+  outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+select {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #E6E6E6;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100px;
+  height: 32px;
+  text-align: center;
+}
+
+section {
+  margin: 40px;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.exercises {
+  opacity: 0.8;
+  background-color: lightblue;
+  margin: 5%;
+}
+
+.grid {
+  content: "";
+  background-image: url("/src/weight.jpg");
+  opacity: 0.9;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: minmax(200px, 1fr);
+  margin-bottom: 2em;
+}
+
+.box > a > img {
+  border-radius: 50%;
+  width: 20%;
+  max-height: 50%;
+}
+
+.exercise-gif {
+  border-radius: 75%;
+  width: 20%;
+  max-height: 20%;
+}
+
+.exercise {
+  font-family: 'Georgia';
+  font-size: 2.2em;
+  text-transform: capitalize;
+  color: black;
+}
+
+.exercise-description {
+  font-size: 0.5em;
+  text-transform: none;
+
+}
+
+.firebaseui-title {
+  padding-bottom: 16px;
+}
+
+.firebaseui-text {
+  color: rgba(0, 0, 0, 0.87);
+  direction: ltr;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.firebaseui-link {
+  color: #4285f4;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.firebaseui-link:hover {
+  text-decoration: underline;
+}
+
+.firebaseui-indent {
+  margin-left: 1em;
+}
+
+.firebaseui-dialog {
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+  font: 16px Roboto, arial, sans-serif;
+  height: auto;
+  max-height: fit-content;
+  padding: 24px;
+  text-align: left;
 }
